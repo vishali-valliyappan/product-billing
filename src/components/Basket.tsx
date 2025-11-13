@@ -13,8 +13,7 @@ import {
 import { firestore } from "../firebase";
 import { addDoc, collection } from "@firebase/firestore";
 import { ShoppingCart } from "lucide-react";
-import { Plus } from "lucide-react";
-import { Minus } from "lucide-react";
+
 import toast from "react-hot-toast";
 interface SavedOrder {
   items: {
@@ -38,12 +37,6 @@ const BasketPage: React.FC = () => {
   const offers = useSelector(selectOffers);
   const total = useSelector(selectTotal);
   const [savedOrder, setSavedOrder] = useState<SavedOrder | null>(null);
-
-  // Helper to check if product is in cart and get quantity
-  const getQuantity = (id: number) => {
-    const found = items.find((item) => item.id === id);
-    return found ? found.quantity : 0;
-  };
 
   const saveBasket = async () => {
     try {
