@@ -199,9 +199,9 @@ const BasketPage: React.FC = () => {
                   <span>£{(item.price * item.quantity).toFixed(2)}</span>
                 </div>
                 {item.saving > 0 && (
-                  <div className="text-sm text-red-600 flex justify-between">
+                  <div className="text-sm text-[#0cb107f7] flex justify-between">
                     <div> {item.offer}:</div>
-                    <div> -£{item.saving.toFixed(2)}</div>
+                    <div> - £{item.saving.toFixed(2)}</div>
                   </div>
                 )}
               </li>
