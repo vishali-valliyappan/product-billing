@@ -59,7 +59,6 @@ const BasketPage = () => {
       toast.success(`Order saved with ID: ${docRef.id}`);
       dispatch(clearCart());
 
-      // Save locally to show the bill
       setSavedOrder(orderData);
     } catch (error) {
       console.error("Error saving basket:", error);

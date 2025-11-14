@@ -7,7 +7,6 @@ function App() {
   const [page, setPage] = useState<"products" | "basket">("products");
   return (
     <div className="min-h-screen bg-gray-100">
-      {/* Navbar */}
       <nav className="bg-[#2563EB] text-white shadow p-4 flex justify-between items-center">
         <h1 className="text-xl font-bold">Supermarket</h1>
         <div className="flex space-x-4">

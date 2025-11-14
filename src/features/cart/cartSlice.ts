@@ -1,4 +1,3 @@
-// src/features/cart/cartSlice.ts
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import type { CartItem, Product } from "../../types";
 

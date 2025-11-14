@@ -17,6 +17,7 @@ const ProductList = () => {
   const dispatch = useDispatch();
   const cartItems = useSelector((state: any) => state.cart.items);
 
+  //getQuantity
   const getQuantity = (productId: number) => {
     const item = cartItems.find((i: any) => i.id === productId);
     return item ? item.quantity : 0;
