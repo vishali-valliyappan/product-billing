@@ -2,14 +2,14 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
-const firebaseConfig = {
-  apiKey: "AIzaSyCdg0bnqpFoBurK21_oqh_wpK1EWOW7RXQ",
-  authDomain: "supermarket-billing-16241.firebaseapp.com",
-  projectId: "supermarket-billing-16241",
-  storageBucket: "supermarket-billing-16241.firebasestorage.app",
-  messagingSenderId: "450192273390",
-  appId: "1:450192273390:web:5db4b77e851a3a740ce8ff",
-  measurementId: "G-V8VZZ0TJQ6",
+export const firebaseConfig = {
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase

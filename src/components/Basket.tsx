@@ -8,13 +8,12 @@ import {
   addToCart,
   removeFromCart,
   clearCart,
-  //   decrementFromCart,
 } from "../features/cart/cartSlice";
 import { firestore } from "../firebase";
 import { addDoc, collection } from "@firebase/firestore";
 import { ShoppingCart } from "lucide-react";
-
 import toast from "react-hot-toast";
+
 interface SavedOrder {
   items: {
     id: number;
@@ -30,7 +29,7 @@ interface SavedOrder {
   createdAt: Date;
 }
 
-const BasketPage: React.FC = () => {
+const BasketPage = () => {
   const dispatch = useDispatch();
   const items = useSelector(selectCartItems);
   const subtotal = useSelector(selectSubtotal);
